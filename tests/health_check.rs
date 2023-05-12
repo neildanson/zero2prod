@@ -26,5 +26,4 @@ fn spawn_app() -> String {
     let server = zero2prod::run(listener).expect("Failed to bind address");
     let _ = tokio::spawn(server);
     format!("http://127.0.0.1:{}", port)
-
 }
