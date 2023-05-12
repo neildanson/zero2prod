@@ -1,5 +1,6 @@
-fn main() {
-    println!("Hello, world! Neil Danson ");
-}
+use zero2prod::run;
 
-//cargo watch -x check -x test -x run
+#[tokio::main]
+async fn main() -> Result<(), std::io::Error> {
+    run()?.await
+}
