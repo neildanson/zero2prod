@@ -12,7 +12,7 @@
         {
             "label": "Cargo Format",
             "type": "shell",
-            "command": "cargo fmt"
+            "command": "cargo fmt",
         }
     ]
 }
