@@ -7,3 +7,13 @@ On Windows -
     - apt-get
         * openssl
         * libssl-dev
+
+
+DOCKER Commands
+Start Postgres & update DB
+
+`./scripts/init_db.sh`
+
+Just update DB
+
+`SKIP_DOCKER=true ./scripts/init_db.sh`
