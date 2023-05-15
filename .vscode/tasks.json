@@ -6,8 +6,13 @@
         {
             "label": "Cargo Watch",
             "type": "shell",
-            "command": "cargo watch -x check -x test -x run",
+            "command": "cargo watch -x check -x test",
             "runOptions": { "runOn": "folderOpen" }
+        },
+        {
+            "label": "Cargo Format",
+            "type": "shell",
+            "command": "cargo fmt"
         }
     ]
 }
