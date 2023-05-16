@@ -28,9 +28,7 @@ pub async fn subscribe(
     .execute(connection_pool.get_ref())
     .await
     {
-        Ok(_) => {
-            HttpResponse::Ok().finish()
-        },
+        Ok(_) => HttpResponse::Ok().finish(),
         Err(e) => {
             println!("Failed to execute query: {}", e);
             HttpResponse::InternalServerError().finish()
