@@ -25,7 +25,6 @@ async fn health_check_works() {
 async fn subscribe_returns_a_200_for_valid_form_data() {
     // Arrange
     let app = spawn_app().await;
-    
 
     let client = reqwest::Client::new();
     // Act
