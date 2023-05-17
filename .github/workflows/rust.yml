@@ -18,6 +18,8 @@ jobs:
     - uses: actions/checkout@v3
     - name: Format
       run: cargo fmt -- --check
+    - name: Run POSTGRESS
+      run:  ./scripts/init_db.sh
     - name: Build
       run: cargo build --verbose
     - name: Run tests
