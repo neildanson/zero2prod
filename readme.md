@@ -1,3 +1,8 @@
+Install PSQL
+
+https://www.timescale.com/blog/how-to-install-psql-on-mac-ubuntu-debian-windows/
+
+
 On Windows - 
 
 * Use WSL (2). 
