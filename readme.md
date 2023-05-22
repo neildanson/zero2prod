@@ -37,3 +37,9 @@ curl -i -X POST -d 'email=thomas_mann@hotmail.com&name=Tom' http://127.0.0.1:800
     {"v":0,"name":"zero2prod","msg":"[ADDING A NEW SUBSCRIBER - END]","level":30,"hostname":"WINDOWS-IUONSS7","pid":3253,"time":"2023-05-19T15:56:42.01699327Z","target":"zero2prod::routes::subscriptions","line":12,"file":"src/routes/subscriptions.rs","subscriber_email":"neil.danson@gmail.com.com","subscriber_name":"Tom","elapsed_milliseconds":3,"request_id":"f7444167-77a0-49f1-acb1-174fe5986afc"}
 
     {"v":0,"name":"zero2prod","msg":"127.0.0.1 \"POST /subscriptions HTTP/1.1\" 200 0 \"-\" \"curl/7.81.0\" 0.003372","level":30,"hostname":"WINDOWS-IUONSS7","pid":3253,"time":"2023-05-19T15:56:42.017065849Z","target":"log","line":null,"file":null,"log.module_path":"actix_web::middleware::logger","log.file":"/home/neild/.cargo/registry/src/index.crates.io-6f17d22bba15001f/actix-web-4.3.1/src/middleware/logger.rs","log.target":"actix_web::middleware::logger","log.line":421}
+
+Docker build
+
+`docker build --tag zero2prod --file Dockerfile .`
+
+`docker run -p 8000:8000 zero2prod`
