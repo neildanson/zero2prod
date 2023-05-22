@@ -22,6 +22,8 @@ jobs:
       run: cargo install sqlx-cli
     - name: Run POSTGRESS
       run:  ./scripts/init_db.sh
+    - name: Check  Offline SQL
+      run: cargo sqlx prepare --check -- --bin zero2prod
     - name: Build
       run: cargo build --verbose
     - name: Run tests
