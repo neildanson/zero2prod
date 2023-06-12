@@ -43,3 +43,7 @@ Docker build
 `docker build --tag zero2prod --file Dockerfile .`
 
 `docker run -p 8000:8000 zero2prod`
+
+Deploy to digital ocean  `doctl apps create --spec spec.yaml`
+
+Quick update
